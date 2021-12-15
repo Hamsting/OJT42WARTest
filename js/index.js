@@ -89,6 +89,7 @@ function addNewEquipItem(itemJson) {
 
 
 function requestNotices() {
+	/*
     var data = {};
     data = JSON.stringify(data);    
 
@@ -100,6 +101,15 @@ function requestNotices() {
         notices = JSON.parse(xhr.responseText);
         renderNotices();
     });
+	*/
+	notices =
+	{
+    "list": [
+        {"level": "warning", "content": "현재 노트북의 잔여 수량이 적어 단기간 대여만 가능합니다."},
+        {"level": "info", "content": "긴급한 대여 요청은 내선번호(112)로 연락주시기 바랍니다."}
+		]
+	};
+	renderNotices();
 }
 
 function renderNotices() {
@@ -153,7 +163,8 @@ function hideLightBox() {
 }
 
 function makeDraft(equipJson) {
-    window.open('http://localhost:8000/makeDraft?' + htmlUtils.jsonToQS(equipJson));
+	WIP();
+    // window.open('http://localhost:8000/makeDraft?' + htmlUtils.jsonToQS(equipJson));
 }
 
 
