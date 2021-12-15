@@ -1,0 +1,45 @@
+body {
+	padding-top: 56px;
+}
+
+.copyleft {
+	display: inline-block;
+	transform: rotate(180deg);
+}
+
+.notice-icon {
+	display: inline;
+	width: 24px;
+	height: 24px;
+	margin-right: 10px;
+}
+
+#darken-background {
+	position: absolute;
+	top: 0; left: 0; right: 0;
+	height: 100%; 
+
+	display: none;
+	background: rgba(0, 0, 0, 0.9);
+	z-index: 10000;
+	overflow-y: scroll;
+}
+
+#lightbox {
+	width: 700px;
+	margin: 20px auto; padding: 15px;
+
+	border: 1px solid #333333;
+	border-radius: 5px;
+	background: white;
+	box-shadow: 0 5px 5px rgba(34, 25, 25, 0.4);
+
+	text-align: center;
+}
+
+.equip-information {  overflow: hidden;  text-align: left; }
+.equip-information-text { float: right; width: 660px; }
+.equip-information-code { float: right; color: dimgrey }
+.equip-information-count { float: right; width: 115px; }
+.lightbox-splitter { margin: 10px 0; }
+#makeDraft { float: right;  }
